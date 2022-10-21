@@ -15,3 +15,8 @@
 - Cria uma interface de monstro(que pode ter métodos padrões).
 - Depois cria classes que implementam essa interface, e cria 3 objetos de monstros O M1 que cospe fogo, o M2 que dispara Raio e o M3 que Cospe Fogo, dispara Raio e Sopra Gelo.
 - Após isso podemos criar a Level 1 Factory, a Level 2 Factory a Level 3 Factory, cada uma delas tendo sua própria lógica de criação dos mostros.
+
+## Vantagens
+
+- Quem usar as fábricas de monstros não terá acesso as classes concretas, o que ajuda no desacoplamento.
+- Remove a dependência da aplicação, pois quem utiliza as fábricas também pode definir seu conjunto de lógica.
