@@ -1,8 +1,8 @@
-package br.com.cod3r.factory.apple.model;
+package br.com.code.factory.monster.model;
 
-public abstract class IPhone {
+public abstract class Moster {
 	
-	public abstract void getHardware();
+	public abstract void getMonsterHability();
 	
 	public void assemble() {
 		System.out.println("Assembling all the hardwares");
