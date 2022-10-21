@@ -20,3 +20,10 @@
 
 - Quem usar as fábricas de monstros não terá acesso as classes concretas, o que ajuda no desacoplamento.
 - Remove a dependência da aplicação, pois quem utiliza as fábricas também pode definir seu conjunto de lógica.
+
+## Tipos de Factorys
+As factorys podem ter variações em seus usos, aumentando ou diminuindo a complexidade.
+
+- 1° Podemos criar uma factory para cada objeto concreto, Ex: M1Factory, M2Factory...Isso aumenta a complexidade pois quem utilizar essa classe vai ter conhecimento de cada factory q utilizar e da Interface padrão e não é a mais usual no dia dia.
+- 2° **Simple Factory**. Ao invés de criarmos uma interface da Factory, criamos uma única classe que encapsula toda a complexidade de criacção dos Monstros por exemplo. Nessa classe criamos um orderMonster e as características dos monstros é passada via parâmetro, oque diminui bastante a complexidade. O utilizador depende apenas da classe abstrata/interface de Monstro e da MonsterSimpleFactory.
+- 3° **Half Simple**. Podemos criar uma fábrica para cada grupo de Mostros e voltamos com a Interface de Monstros nesse caso que será implementada pelo utilizador. Nessa forma criamos uma fabrica para MFire, MCold...E cada uma dessas fábricas fica responsável por seus objetos concretos, como MCold1 e MColdBoss e assim por diante.
